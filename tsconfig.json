@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES6",
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "lib": ["DOM", "ESNext"],
+    // "noImplicitAny": true,
+    // "removeComments": true,
+    // "preserveConstEnums": true,
+    // "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    // "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": "src",
+    "paths": {
+      // "@app/*": ["app/*"],
+      // "@config/*": ["app/_config/*"],
+      // "@environment/*": ["environments/*"],
+      // "@shared/*": ["app/_shared/*"],
+      // "@helpers/*": ["helpers/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
