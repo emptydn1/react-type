@@ -1,4 +1,4 @@
-import imga from "./a.jpg";
+import React from "react";
 
 function App() {
   return <div>{process.env.name}</div>;
