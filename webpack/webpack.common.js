@@ -1,5 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const getTransformer = require("./transformer");
+
 // const CopyPlugin = require("copy-webpack-plugin");
 
 // const optimization = {
@@ -35,7 +37,14 @@ module.exports = {
       {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
-        use: "babel-loader",
+        use: [
+          {
+            loader: "ts-loader",
+            options: {
+              getCustomTransformers: getTransformer,
+            },
+          },
+        ],
       },
       {
         test: /\.s[ac]ss$/i,
