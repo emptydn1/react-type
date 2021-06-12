@@ -10,6 +10,10 @@ module.exports = {
     // hot: true, enable module's hot replacement
   },
   plugins: [
-    new webpack.DefinePlugin({ "process.env.name": JSON.stringify("huy") }),
+    new webpack.DefinePlugin({
+      "process.env": {
+        NAME: JSON.stringify("dev"),
+      },
+    }),
   ],
 };
